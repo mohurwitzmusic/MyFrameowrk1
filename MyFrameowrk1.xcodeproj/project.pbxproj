@@ -15,6 +15,8 @@
 		D15B325724BBDF4600C8E973 /* FooTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = D15B324924BBDF4600C8E973 /* FooTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D15B325E24BBE20100C8E973 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B322324BBDE7F00C8E973 /* Foo.swift */; };
 		D15B326024BBE3C900C8E973 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B325F24BBE3C900C8E973 /* MainViewController.swift */; };
+		D15B32D324BBE96500C8E973 /* FooTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15B324724BBDF4600C8E973 /* FooTarget.framework */; };
+		D15B32D424BBE96500C8E973 /* FooTarget.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D15B324724BBDF4600C8E973 /* FooTarget.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,28 @@
 			remoteGlobalIDString = D15B324624BBDF4600C8E973;
 			remoteInfo = FooTarget;
 		};
+		D15B32D524BBE96500C8E973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D15B320024BBD91000C8E973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D15B324624BBDF4600C8E973;
+			remoteInfo = FooTarget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D15B32D724BBE96500C8E973 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D15B32D424BBE96500C8E973 /* FooTarget.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D15B320924BBD91000C8E973 /* MyFrameowrk1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFrameowrk1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15B32D324BBE96500C8E973 /* FooTarget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +117,7 @@
 				D15B324824BBDF4600C8E973 /* FooTarget */,
 				D15B325324BBDF4600C8E973 /* FooTargetTests */,
 				D15B320A24BBD91000C8E973 /* Products */,
+				D15B32D224BBE96500C8E973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +178,13 @@
 			path = FooTargetTests;
 			sourceTree = "<group>";
 		};
+		D15B32D224BBE96500C8E973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -183,10 +215,12 @@
 				D15B320524BBD91000C8E973 /* Sources */,
 				D15B320624BBD91000C8E973 /* Frameworks */,
 				D15B320724BBD91000C8E973 /* Resources */,
+				D15B32D724BBE96500C8E973 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D15B32D624BBE96500C8E973 /* PBXTargetDependency */,
 			);
 			name = MyFrameowrk1;
 			productName = MyFrameowrk1;
@@ -369,6 +403,11 @@
 			isa = PBXTargetDependency;
 			target = D15B324624BBDF4600C8E973 /* FooTarget */;
 			targetProxy = D15B325124BBDF4600C8E973 /* PBXContainerItemProxy */;
+		};
+		D15B32D624BBE96500C8E973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D15B324624BBDF4600C8E973 /* FooTarget */;
+			targetProxy = D15B32D524BBE96500C8E973 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
