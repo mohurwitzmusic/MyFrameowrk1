@@ -10,6 +10,7 @@
 		D15B321324BBD91100C8E973 /* MyFrameowrk1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15B320924BBD91000C8E973 /* MyFrameowrk1.framework */; };
 		D15B321824BBD91100C8E973 /* MyFrameowrk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B321724BBD91100C8E973 /* MyFrameowrk1Tests.swift */; };
 		D15B321A24BBD91100C8E973 /* MyFrameowrk1.h in Headers */ = {isa = PBXBuildFile; fileRef = D15B320C24BBD91000C8E973 /* MyFrameowrk1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D15B322424BBDE7F00C8E973 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B322324BBDE7F00C8E973 /* Foo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D15B321224BBD91100C8E973 /* MyFrameowrk1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameowrk1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15B321724BBD91100C8E973 /* MyFrameowrk1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameowrk1Tests.swift; sourceTree = "<group>"; };
 		D15B321924BBD91100C8E973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15B322324BBDE7F00C8E973 /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		D15B320B24BBD91000C8E973 /* MyFrameowrk1 */ = {
 			isa = PBXGroup;
 			children = (
+				D15B322524BBDE8700C8E973 /* MySourceFiles */,
 				D15B320C24BBD91000C8E973 /* MyFrameowrk1.h */,
 				D15B320D24BBD91000C8E973 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				D15B321924BBD91100C8E973 /* Info.plist */,
 			);
 			path = MyFrameowrk1Tests;
+			sourceTree = "<group>";
+		};
+		D15B322524BBDE8700C8E973 /* MySourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D15B322324BBDE7F00C8E973 /* Foo.swift */,
+			);
+			path = MySourceFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					D15B320824BBD91000C8E973 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					D15B321124BBD91100C8E973 = {
 						CreatedOnToolsVersion = 11.5;
@@ -195,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15B322424BBDE7F00C8E973 /* Foo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		D15B321E24BBD91100C8E973 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 67U25886CA;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.midikinetics.MyFrameowrk1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		D15B321F24BBD91100C8E973 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 67U25886CA;
@@ -388,6 +404,7 @@
 		D15B322124BBD91100C8E973 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67U25886CA;
 				INFOPLIST_FILE = MyFrameowrk1Tests/Info.plist;
@@ -406,6 +423,7 @@
 		D15B322224BBD91100C8E973 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67U25886CA;
 				INFOPLIST_FILE = MyFrameowrk1Tests/Info.plist;
