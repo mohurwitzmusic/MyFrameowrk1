@@ -14,6 +14,7 @@
 		D15B325524BBDF4600C8E973 /* FooTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B325424BBDF4600C8E973 /* FooTargetTests.swift */; };
 		D15B325724BBDF4600C8E973 /* FooTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = D15B324924BBDF4600C8E973 /* FooTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D15B325E24BBE20100C8E973 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B322324BBDE7F00C8E973 /* Foo.swift */; };
+		D15B326024BBE3C900C8E973 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B325F24BBE3C900C8E973 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D15B324F24BBDF4600C8E973 /* FooTargetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FooTargetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15B325424BBDF4600C8E973 /* FooTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooTargetTests.swift; sourceTree = "<group>"; };
 		D15B325624BBDF4600C8E973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15B325F24BBE3C900C8E973 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = FooTarget/MainViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		D15B322524BBDE8700C8E973 /* MySourceFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D15B325F24BBE3C900C8E973 /* MainViewController.swift */,
 			);
 			path = MySourceFiles;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15B326024BBE3C900C8E973 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.midikinetics.MyFrameowrk1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,6 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.midikinetics.MyFrameowrk1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -543,6 +549,7 @@
 		D15B322124BBD91100C8E973 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67U25886CA;
 				INFOPLIST_FILE = MyFrameowrk1Tests/Info.plist;
@@ -561,6 +568,7 @@
 		D15B322224BBD91100C8E973 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67U25886CA;
 				INFOPLIST_FILE = MyFrameowrk1Tests/Info.plist;
@@ -595,6 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.midikinetics.FooTarget;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -619,6 +628,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.midikinetics.FooTarget;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
